@@ -20,7 +20,7 @@ services:
       - apm
       - mysql
   kibana:
-    image: kibana:6.5.4
+    image: kibana:6.5.2
     environment:
       - "LOGGING_QUIET=true"
     links:
@@ -61,6 +61,6 @@ services:
       - 3306:3306
     environment:
       MYSQL_ROOT_PASSWORD: qazxsw
-      MYSQL_DATABASE: users
+      MYSQL_DATABASE: mysqldb
       MYSQL_USER: app
       MYSQL_PASSWORD: ecvbjkl9876t
